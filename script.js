@@ -23,4 +23,17 @@ function formatCurrencyBRL(value) {
 //catches the form submit event
 form.onsubmit = (event) => {
     event.preventDefault() // prevents default form event behavior
+
+    const newExpense = {
+        id: new Date().getTime(),
+        expense: expense.value,
+        category_id: category.value,
+        category_name: category.options[category.selectedIndex].text,
+        amout: amount.value, 
+        created_at: new Date()
+    } // creates a new expense object using the form fields value
+
+    
+
 }
+
