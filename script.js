@@ -8,7 +8,7 @@ const category = document.getElementById('category')
 const expensesList = document.querySelector('ul')
 
 //select the expense list header elemtents
-const expensesHeader = document.querySelector('header')
+const expensesQuantity = document.querySelector('aside header p span')
 
 // EVENT HANDLERS
 
@@ -105,13 +105,28 @@ function formatCurrencyBRL(value) {
 
 function updateListTotal() {
     try { 
-
         //adquires the total of list elements
-        const listElements = expensesList.children
+        const expenseListElements = expensesList.children
         
+        //updates the quantity
+        expensesQuantity.textContent = `${expenseListElements.length} ${expenseListElements.length > 1 ? 'despesas' : 'despesa'}`
+        
+       
+
+
+
     } catch (error) {
         console.log(error);
         alert(error)
+    }
+}
+
+function updateAmountTotal() {
+    try {
+        
+    } catch (error) {
+        console.log(error)
+        alert(`Erro ao atualizar o montante total: ${error}`)
     }
 }
 
