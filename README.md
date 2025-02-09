@@ -25,8 +25,8 @@ RefundApp é uma aplicação web simples que permite aos usuários solicitar ree
 
 3. Pronto! Agora você pode testar a funcionalidade do RefundApp.
 
-##👨‍💻 Contribuições
+## 👨‍💻 Contribuiçõe
 Contribuições são bem-vindas! Se você tiver alguma sugestão ou encontrar um bug, fique à vontade para abrir uma issue ou enviar um pull request.
 
-##📄 Licença
+## ❕ License
 Este projeto é licenciado sob a MIT License.
